@@ -73,7 +73,17 @@ app.use(expressLayout);
 app.set("views", path.join(__dirname, "/resources/views"));
 app.set("view engine", "ejs");
 
-require("./routes/web")(app);
+// require("./routes/web")(app);
+
+// Require and call initRoutes for route definitions
+try {
+  const initRoutes = require("./routes/web");
+  initRoutes(app); // Apply routes to the Express app
+} catch (error) {
+  console.error("Error requiring routes/web:", error);
+  // Handle the error appropriately, e.g., exit the process or render an error page
+}
+
 
 const server = app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
