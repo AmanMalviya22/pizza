@@ -17,9 +17,13 @@ function orderController() {
       });
       order
         .save()
-        .then((result) => {
+        .then(result => {
           req.flash("success", "Order placed successfully");
           delete req.session.cart;
+          //emit
+          const eventEmitter = req.app.get("eventEmitter");
+          eventEmitter.emit("orderPlaced", result);
+
           return res.redirect("/customers/orders");
         })
         .catch((err) => {
