@@ -12,7 +12,7 @@ const MongoDbStore = require("connect-mongo")(session);
 const passport = require("passport");
 const Emitter=require('events')
 // Initialize mongoose connection
-mongoose.connect("mongodb://localhost:27017/pizza", {
+mongoose.connect(process.env.MONGO_CONNECTION_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -74,15 +74,20 @@ app.set("views", path.join(__dirname, "/resources/views"));
 app.set("view engine", "ejs");
 
 // require("./routes/web")(app);
-
+  
 // Require and call initRoutes for route definitions
 try {
   const initRoutes = require("./routes/web");
   initRoutes(app); // Apply routes to the Express app
+  app.use((req,res)=>{
+    res.status(404).render('errors/404')
+  })
 } catch (error) {
+  
   console.error("Error requiring routes/web:", error);
   // Handle the error appropriately, e.g., exit the process or render an error page
 }
+
 
 
 const server = app.listen(PORT, () => {
