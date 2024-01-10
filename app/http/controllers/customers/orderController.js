@@ -60,6 +60,7 @@ const moment = require("moment");
 function orderController() {
   return {
     store(req, res) {
+      
       // Validate request
       const { phone, address } = req.body;
       if (!phone || !address) {
@@ -81,14 +82,14 @@ function orderController() {
           return Order.populate(result, { path: "customerId" });
         })
         .then((populatedOrder) => {
-          req.flash("success", "Order placed successfully");
+          // req.flash("success", "Order placed successfully");
           delete req.session.cart;
 
           // Emit
           const eventEmitter = req.app.get("eventEmitter");
           eventEmitter.emit("orderPlaced", populatedOrder);
-
-          return res.redirect("/customers/orders");
+         return res.json({message: 'Order placed successfully'})
+          // return res.redirect("/customers/orders");
         })
         .catch((err) => {
           req.flash("error", "Something went wrong");
