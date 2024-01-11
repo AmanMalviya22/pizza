@@ -5,7 +5,7 @@
   * [Overview](#overview)
   * [Motivation](#motivation)
   * [Installation](#installation)
-  * [Deployement on Heroku](#deployement-on-heroku)
+  * [Deployement on AWS](#deployement-on-AWS)
   * [Directory Tree](#directory-tree)
   * [Bug / Feature Request](#bug---feature-request)
   * [Future scope of project](#future-scope)
@@ -20,15 +20,19 @@ Link: [bit.ly/3vtOGVk/](bit.ly/3vtOGVk/)
 ![image](https://github.com/AmanMalviya22/pizza/assets/94959490/f07c7211-0149-40fc-9b1f-c491d65ea561)
 
 ## login up
+![image](https://github.com/AmanMalviya22/pizza/assets/94959490/e5871a6e-baa7-4bca-9f55-b1a14f2203cc)
 
 
 ## cart page
+![image](https://github.com/AmanMalviya22/pizza/assets/94959490/e9cfb383-ffc6-43ed-8488-5850d781ed75)
 
 
 ## order page
+![image](https://github.com/AmanMalviya22/pizza/assets/94959490/19885974-9c21-41c3-b151-6e61eea3ba5b)
 
 
 ## admin page
+![image](https://github.com/AmanMalviya22/pizza/assets/94959490/3a97f5d6-8c5c-47b9-80a4-752c3f2eef2f)
 
 ## Overview
 Due to the unavailability of food delivery services like Zomato or Swiggy in my university, I took the initiative to address this issue by developing a Pizza Delivery application using this web application you can order pizza and get pizza within estimated time of 3 Hours.Initially i provided pizza delivery for smvdu students only.I successfully generate a revenue of Rs/- 60000 per month.
@@ -43,12 +47,12 @@ go to pizza folder and run below command
 yarn install || npm install
 ```
 
-## Deployement on Heroku
+## Deployement on AWS
 i successfully deployed this web application on AWS with my free tier account.
 
 [![](bit.ly/3vtOGVk)
 
-Our next step would be to follow the instruction given on [Heroku Documentation](httsps://www.aws.amazon.com) to deploy a web app.
+Our next step would be to follow the instruction given on [AWS Documentation](httsps://www.aws.amazon.com) to deploy a web app.
 
 ## Directory Tree 
 ```
