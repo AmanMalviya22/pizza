@@ -30,6 +30,10 @@ Link: [bit.ly/3vtOGVk/](bit.ly/3vtOGVk/)
 ## order page
 ![image](https://github.com/AmanMalviya22/pizza/assets/94959490/19885974-9c21-41c3-b151-6e61eea3ba5b)
 
+## order tracking page
+![image](https://github.com/AmanMalviya22/pizza/assets/94959490/12f1e818-19c0-4e77-ad27-aec4a30cc243)
+
+
 
 ## admin page
 ![image](https://github.com/AmanMalviya22/pizza/assets/94959490/3a97f5d6-8c5c-47b9-80a4-752c3f2eef2f)
