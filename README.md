@@ -12,7 +12,7 @@
 
 
 ## Demo
-Link: [bit.ly/3vtOGVk/](bit.ly/3vtOGVk/)
+Link: [https://bit.ly/3vtOGVk](https://bit.ly/3vtOGVk)
 ## Home Page
 ![image](https://github.com/AmanMalviya22/pizza/assets/94959490/fd1a4948-de75-4289-88b3-6994781fe250)
 
