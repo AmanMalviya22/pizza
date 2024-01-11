@@ -39,7 +39,7 @@ Link: [https://bit.ly/3vtOGVk](https://bit.ly/3vtOGVk)
 ![image](https://github.com/AmanMalviya22/pizza/assets/94959490/3a97f5d6-8c5c-47b9-80a4-752c3f2eef2f)
 
 ## Overview
-Due to the unavailability of food delivery services like Zomato or Swiggy in my university, I took the initiative to address this issue by developing a Pizza Delivery application using this web application you can order pizza and get pizza within estimated time of 3 Hours.Initially i provided pizza delivery for smvdu students only.I successfully generate a revenue of Rs/- 60000 per month.
+Due to the unavailability of food delivery services like Zomato or Swiggy in my university, I took the initiative to address this issue by developing a Pizza Delivery application using this web application you can order pizza and get pizza within estimated time of 3 Hours.Initially i provided pizza delivery for smvdu students only.***I successfully generate a revenue of Rs/- 60000 per month.***
 
 ## Motivation
 Motivation behind making this web application is unavailability of food delivery services like Zomato or Swiggy in my university
