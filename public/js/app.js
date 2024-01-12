@@ -2396,11 +2396,10 @@ function placeOrder(formObject) {
       text: res.data.message,
       progressBar: false
     }).show();
-    // setTimeout(() => {
-    //   window.location.href = "/customers/orders";
-    // }, 1000);
-
-    // console.log(res.data)
+    setTimeout(function () {
+      window.location.href = "/customers/orders";
+    }, 1000);
+    console.log(res.data);
   })["catch"](function (err) {
     new (noty__WEBPACK_IMPORTED_MODULE_0___default())({
       type: "error",
@@ -2571,19 +2570,19 @@ function _initStripe() {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
           _context2.next = 2;
-          return (0,_stripe_stripe_js__WEBPACK_IMPORTED_MODULE_0__.loadStripe)('pk_test_51Hf6vbDfWW6uHRy7b6Upoa4bWhGYmk2ElEN4AiFeqozzlccU6OpAoD9d1oIar3qg9i8ASiOs9ly4rFJQOTPM5MMk00GN7COA2N');
+          return (0,_stripe_stripe_js__WEBPACK_IMPORTED_MODULE_0__.loadStripe)("pk_test_51Hf6vbDfWW6uHRy7b6Upoa4bWhGYmk2ElEN4AiFeqozzlccU6OpAoD9d1oIar3qg9i8ASiOs9ly4rFJQOTPM5MMk00GN7COA2N");
         case 2:
           stripe = _context2.sent;
           card = null;
-          paymentType = document.querySelector('#paymentType');
+          paymentType = document.querySelector("#paymentType");
           if (paymentType) {
             _context2.next = 7;
             break;
           }
           return _context2.abrupt("return");
         case 7:
-          paymentType.addEventListener('change', function (e) {
-            if (e.target.value === 'card') {
+          paymentType.addEventListener("change", function (e) {
+            if (e.target.value === "card") {
               // Display Widget
               card = new _CardWidget__WEBPACK_IMPORTED_MODULE_2__.CardWidget(stripe);
               card.mount();
@@ -2593,9 +2592,9 @@ function _initStripe() {
           });
 
           // Ajax call
-          paymentForm = document.querySelector('#payment-form');
+          paymentForm = document.querySelector("#payment-form");
           if (paymentForm) {
-            paymentForm.addEventListener('submit', /*#__PURE__*/function () {
+            paymentForm.addEventListener("submit", /*#__PURE__*/function () {
               var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
                 var formData, formObject, _iterator, _step, _step$value, key, value, token;
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
