@@ -12,10 +12,11 @@
     "watch": "npm run development -- --watch",
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js  --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@stripe/stripe-js": "1.10.0",
     "axios": "^1.6.3",
     "bcrypt": "^5.0.0",
     "connect-mongo": "^3.2.0",
@@ -30,7 +31,8 @@
     "noty": "^3.2.0-beta",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "socket.io": "2.3.0"
+    "socket.io": "2.3.0",
+    "stripe": "8.118.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
